@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 91 66">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        font-size: 30px;
+        font-family: HelveticaNeue-Bold, Helvetica Neue;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <g id="Logo" transform="translate(-106 -38)">
+    <text id="CR._MDRS" data-name="CR.
+MDRS" class="cls-1" transform="translate(106 67)"><tspan x="0" y="0">CR.</tspan><tspan x="0" y="30">MDRS</tspan></text>
+    <rect id="Rectangle_83" data-name="Rectangle 83" class="cls-2" width="27" height="1" transform="translate(158 48)"/>
+  </g>
+</svg>
