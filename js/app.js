@@ -11,6 +11,30 @@ if(scrollTop > 50){
 };
 });
 
+/* Animação Títulos */
+
+var $target = $('.anime'),
+    animatioClass = 'anime-start',
+    offset = $(window).height() * 3/4;
+
+function animeScroll() {
+  var documentTop = $(document).scrollTop();
+
+  $target.each(function(){
+    var itemTop = $(this).offset().top;
+    if(documentTop > itemTop - offset) {
+      $(this).addClass(animatioClass);
+    } else {
+      $(this).addClass(removeClass);
+    }
+  })
+}
+
+animeScroll();
+
+$(document).scroll(function(){
+  animeScroll();
+});
 
 
 /* Menu */
@@ -20,24 +44,4 @@ $('.btn_menu').click(function(){
 	$('.btn_menu').toggleClass('opened_menu');
 });
 
-/* Animação */
-
-      AOS.init({
-        easing: 'ease-in-out-sine'
-      });
-
-      setInterval(addItem, 300);
-
-      var itemsCounter = 1;
-      var container = document.getElementById('aos-demo');
-
-      function addItem () {
-        if (itemsCounter > 42) return;
-        var item = document.createElement('div');
-        item.classList.add('aos-item');
-        item.setAttribute('data-aos', 'fade-up');
-        item.innerHTML = '<div class="aos-item__inner"><h3>' + itemsCounter + '</h3></div>';
-        container.appendChild(item);
-        itemsCounter++;
-      }
 
