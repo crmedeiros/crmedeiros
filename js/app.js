@@ -3,11 +3,24 @@
 
 $(window).scroll(function(){
 var scrollTop = $(this).scrollTop();
-if(scrollTop > 50){
+if(scrollTop > 1000){
 	$('.barra_menu').addClass('ativa');
 
 } else{
  	$('.barra_menu').removeClass('ativa');
+};
+});
+
+
+/* Mostra e oculta botão scroll */
+
+$(window).scroll(function(){
+var scrollTop = $(this).scrollTop();
+if(scrollTop > 10){
+  $('.scroll-btn').addClass('d-none');
+
+} else{
+  $('.scroll-btn').removeClass('d-none');
 };
 });
 
@@ -21,11 +34,12 @@ function animeScroll() {
   var documentTop = $(document).scrollTop();
 
   $target.each(function(){
-    var itemTop = $(this).offset().top;
+    var itemTop = $(this).position().top;
     if(documentTop > itemTop - offset) {
       $(this).addClass(animatioClass);
+      console.log($(this),documentTop,offset);
     } else {
-      $(this).addClass(removeClass);
+      $(this).addClass(animatioClass);
     }
   })
 }

@@ -40,7 +40,6 @@ h2 span{
   mix-blend-mode: multiply;
 }
 
-
 h3{
   color: rgba(193, 207, 219, 0.25);
   font-size: 4em;
@@ -72,31 +71,166 @@ img{
 }
 
 
+/* Animação bottão scroll */
+
+@-webkit-keyframes ani-mouse {
+  0% {
+  opacity: 1;
+  top: 29%;
+  }
+  60% {
+  opacity: 1;
+  top: 71%;
+  }
+  100% {
+  opacity: 0;
+  top: 71%;
+  }
+}
+@-moz-keyframes ani-mouse {
+  0% {
+  opacity: 1;
+  top: 29%;
+  }
+  60% {
+  opacity: 1;
+  top: 71%;
+  }
+
+
+  100% {
+  opacity: 0;
+  top: 71%;
+  }
+}
+@keyframes ani-mouse {
+ 0% {
+  opacity: 1;
+  top: 29%;
+  }
+  60% {
+  opacity: 1;
+  top: 71%;
+  }
+  100% {
+  opacity: 0;
+  top: 71%;
+  }
+}
+ .scroll-btn {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  bottom: 0px;
+  transition: .5s;
+}
+.scroll-btn > * {
+  display: inline-block;
+  line-height: 18px;
+  font-size: 13px;
+  font-weight: normal;
+  color: red;
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 2px;
+}
+
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *.active {
+  color: #ffffff;
+}
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *:active,
+.scroll-btn > *.active {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+.scroll-btn .mouse {
+  position: relative;
+  display: block;
+  width: 35px;
+  height: 55px;
+  margin: 0 auto 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 3px solid #454C5C;
+  border-radius: 23px;
+}
+.scroll-btn .mouse > * {
+  position: absolute;
+  display: block;
+  top: 29%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  margin: -4px 0 0 -4px;
+  background: #454C5C;
+  border-radius: 50%;
+  -webkit-animation: ani-mouse 1.5s linear infinite;
+  -moz-animation: ani-mouse 1.5s linear infinite;
+  animation: ani-mouse 1.5s linear infinite;
+}
+
 /* Classes da HOme */
 
 .home{
     min-height: 1000px;
+    background: url(../images/bg_home.jpg) no-repeat fixed;
 }
 
 .home h2{
   text-transform: uppercase;
-  color: #454C5C;
+  color: #fff;
 }
 
 .home h4{
   font-weight: lighter;
-  color: #454C5C;
+  color: #fff;
+  margin-left: 180px;
+  line-height: 2em;
+}
+
+h2{
+
+}
+
+h2 span{
+  font-weight: lighter;
+}
+
+h2 span.level1{
+  font-size: 0.5em;
+}
+
+h2 span.level2{
+  font-size: 1em;
+}
+
+h2 strong{
+ font-weight: bold;
+}
+
+h2 strong.level3{
+ margin-left: 180px;
 }
 
 /* Detalhe do título da home */
-.barra{
-display: inline-block;
-width: 20%;
-height: 7px;
-border: none;
-background: #454C5C;
-margin-bottom: 20px;
-}
+
+h2 strong.level3::after {
+  display: block;
+  width: 100px;
+  height: 7px;
+  border: none;
+  background: #fff;
+  margin-bottom: 20px;
+  }
+
+
+
 
 
 
@@ -162,16 +296,30 @@ width: 100%;
 
 /* Case WatchIn */
 
-/* Listagem Home */
-.case_watchin_listagem{
-  background: url(../images/cases/watchin/capa.jpg) no-repeat fixed;
-  background-size: cover;
-  color: #fff;
+/* Listagem Home*/
+.case_listagem{
+  min-height: 900px;
+  position: relative;
 }
 
-.case_watchin_listagem h2, .case_watchin_listagem h4{
-  color: #fff;
+.case_listagem h3{
+  letter-spacing: 0.25em;
+  color: #444B5B;
 }
+
+.case_listagem h4{
+  font-size: 1.2em;
+  margin-bottom: 80px;
+  letter-spacing: 0.25em;
+}
+
+.box_bg{
+  background: #fafafa;);
+  height: 480px;
+  position: absolute;
+  z-index: -1;
+  border-radius: 2px;
+ }
 
 /* Página Interna */
 .case_watchin{
@@ -268,19 +416,21 @@ width: 100%;
 }
 
 
-.case_coletivo{
-  background: url(../images/cases/coletivo_capa.jpg) no-repeat fixed;
-  /*background: linear-gradient(to bottom right, #02BBDD, #0A4E90);*/
+
+/* Case Wikipedia */
+
+/* Listagem Home */
+.case_wikipedia_listagem{
+}
+
+.case_wikipedia_listagem h2, .case_wikipedia_listagem h4{
+
+}
+
+/* Página Interna */
+.case_wikipedia{
+  background: url(../images/cases/watchin/bg_case_watchin.jpg) no-repeat top center;
   background-size: cover;
-  color: #fff;
-  position: relative;
-}
-
-.case_coletivo div{
-
-}
-
-.case_coletivo h2, .case_coletivo h4{
   color: #fff;
 }
 
@@ -302,11 +452,17 @@ width: 100%;
   padding: 15px 25px;
   letter-spacing: 4px;
   text-transform: uppercase;
-  box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.16)
+  box-shadow: 0px 3px 30px rgba(0, 0, 0, 0);
+  border-radius: 2px;
+  border: solid 1px #eee;
 }
 
 .buttom:hover{
-  box-shadow: 0px 3px 50px rgba(0, 0, 0, 0.16)
+  box-shadow: 0px 3px 50px rgba(0, 0, 0, 0.2)
+  color:#fff;
+  background: #00bff2;
+  border: solid 1px #00bff2;
+  padding: 15px 35px;
 
 }
 
@@ -354,6 +510,12 @@ width: 100%;
 
 .ativa{
   background: #fff;
+  height: 90px;
+  box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.05)
+}
+
+.black{
+  background: rgba(0, 0, 0, 0.5)
   height: 90px;
   box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.05)
 }
@@ -460,7 +622,9 @@ border-bottom: solid 1px rgba(255, 255, 255, 0.1);
     margin-top: 0px;
   }
 
-
+  .scroll-btn{
+    display: none;
+  }
 }
 
 
