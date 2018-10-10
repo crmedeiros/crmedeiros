@@ -150,7 +150,7 @@ h4{
 
 .box_thanks{
    background: url(../images/cases/watchin/bg_thanks.jpg) no-repeat top;
-  background-size: cover;
+   background-size: cover;
    padding: 15%;
 }
 
@@ -162,7 +162,11 @@ h4{
 }
 
 .box{ /* Blocos com margens */
-  padding: 120px 50px 120px 50px;
+  padding: 120px 80px 120px 80px;
+}
+
+.box img{
+  max-width: 95%;
 }
 
 .ficha_tecnica li{ /* Dados do projeto e persona */
@@ -247,9 +251,12 @@ h4{
   margin-top: -450px;
 }
 
-
-
-
+.box_idosos{
+  background: url(../images/cases/watchin/foto_Idosos.jpg) no-repeat;
+  height: 900px;
+  width: 100%;
+  background-size: cover;
+}
 
 /* Case Wikipedia */
 
@@ -487,8 +494,120 @@ a.logo{
     }
 
     .box{
-      padding: 50px;
+      padding: 50px 80px;
     }
+
+    .imagem_mockup{
+      margin-top: 0;
+      max-width: 90%;
+    }
+
+      .box_idosos{
+      height: 300px;
+     }
+
+
+
+
+
+    /* Cases */
+
+    .box_thanks{
+       background: url(../images/cases/watchin/bg_thanks.jpg) no-repeat top;
+      background-size: cover;
+       padding: 15%;
+    }
+
+    .box_thanks h3{
+       color: #fff;
+       text-align: center;
+       text-transform: none;
+       font-weight: lighter;
+    }
+
+    .box{ /* Blocos com margens */
+      padding: 20px;
+    }
+
+    .ficha_tecnica li{ /* Dados do projeto e persona */
+      list-style: none;
+      text-align: left;
+      width: 100%;
+      margin-bottom: 40px;
+      display: block;
+      float: left;
+      color: #8693B3;
+    }
+
+    .ficha_tecnica span { /* Label dos dados */
+        color: #C1CFDB;
+        letter-spacing: 10px;
+        text-transform: uppercase;
+        display: block;
+        width: 100%;
+    }
+
+    /* Blocos Aproach */
+
+    .blocos_etapas{
+      padding: 40px 20px 40px 20px;
+      margin-right: 10px;
+    }
+
+    .blocos_etapas h2{
+      font-weight: 100;
+    }
+
+    .blocos_etapas li{
+      margin-bottom: 0;
+    }
+
+    /* Blocos Personas */
+
+    .blocos_personas{
+      padding: 0 40px;
+      margin-bottom: 80px;
+    }
+
+    .blocos_personas img{
+      width: 40%;
+      margin: 0 30% 40px 30%;
+    }
+
+
+    /* Case WatchIn */
+
+    .case_watchin{
+      background: url(../images/cases/watchin/bg_case_watchin.jpg) no-repeat top center;
+      background-size: cover;
+      color: #fff;
+      min-height: 600px;
+    }
+
+    .case_watchin img{
+      margin: 40px auto;
+    }
+
+    .parallax_wireframe{
+      background: url(../images/cases/watchin/wireframe_01_paralax.jpg) no-repeat fixed;
+      background-size: cover;
+      min-height: 500px;
+    }
+
+    .parallax_uifinal{
+      background: url(../images/cases/watchin/capa.jpg) no-repeat fixed;
+      background-size: cover;
+      min-height: 500px;
+    }
+
+    .parallax_problema{
+      background: url(../images/cases/problema_paralax.jpg) no-repeat fixed;
+      background-size: cover;
+      min-height: 500px;
+    }
+
+
+
 }
 
 
