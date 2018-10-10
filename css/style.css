@@ -130,12 +130,20 @@ h4{
 /* Listagem Cases Home */
 
 .case_listagem{
-  min-height: 900px;
   position: relative;
+  margin: 80px 0 120px 0;
 }
 
 .case_listagem h4{
   margin-bottom: 80px;
+}
+
+.box_cor_case{
+  background: rgba(193, 207, 219, 0.1);
+  position: absolute;
+  width: 50%;
+  height: 320px;
+  z-index: -1;
 }
 
 /* Cases */
@@ -177,7 +185,7 @@ h4{
 
 /* Blocos Aproach */
 
-.blocos_etapas{ 
+.blocos_etapas{
   padding: 40px 20px 40px 20px;
   margin-right: 10px;
 }
@@ -234,9 +242,6 @@ h4{
   min-height: 500px;
 }
 
-.bloco_cinza{
-  background: #EDF3F8;
-}
 
 .imagem_mockup{
   margin-top: -450px;
@@ -282,10 +287,10 @@ h4{
 
 /* Estado padrão do logo - Branca */
 
-a.logo{ 
+a.logo{
     background: url(../images/logo.svg) no-repeat; display: block;
     text-indent: -10000px;
-    transition: .4s;
+    transition: .4s ease-out .2s;
     width: 100px;
     height: 100px;
     background-size: 100px;
@@ -374,67 +379,116 @@ a.logo{
 /* Media Queries Tablet / Mobile*/
 
 @media screen and (max-width: 1440px){
-  .home, .case{
-    min-height: 700px;
-  }
+
+ /* Títulos */
+
+    h1{ /* Só foi usado na home */
+    font-size: 4.8em;
+    color: #fff;
+    }
+
     h2{
-      font-size: 4.5em;
-  }
+      font-size: 2.4em;
+      letter-spacing: 0.25em;
+      color: #444B5B;
+    }
 
-  h3{
-      font-size: 2.5em;
-  }
+    h3{
+      color: #444B5B;
+      letter-spacing: 0.25em;
+      font-size: 1.2em;
+    }
 
-  h4{
-      font-size: 1.5em;
-  }
+    h4{
+      color: #8693B3;
+      letter-spacing: 0.5em;
+      font-size: 0.8em;
+      font-weight: 100;
+    }
 
+/* Classes da Home */
+
+    .home{
+        min-height: 720px;
+
+    }
+
+    .home span.level1{ /* Posicionamento do Medeiros da home */
+       margin-left: 11%;
+    }
+
+    .home h2{
+      font-size: 1.6em;
+    }
+
+    .home h4{
+      margin-left: 11%;
+      font-size: 1em;
+    }
+
+    .case_listagem{
+      margin: 80px 0 120px 0;
+    }
+
+
+     .case_listagem .tumb{
+     text-align: center;
+    }
 
 }
 
 @media screen and (max-width: 1200px){
-  .home{}
+
 
 
 }
 
 @media screen and (max-width: 960px){
 
-  .home .case{
-    min-height: 300px;
-  }
+ /* Títulos */
 
-  h2{
-      font-size: 5em;
-  }
 
-  h3{
-      font-size: 2em;
-  }
+    h1{ /* Só foi usado na home */
+    font-size: 4.8em;
+    color: #fff;
+    }
 
-    h3.title_shadow{
-  font-size: 3.2em;
-  }
 
-  .box_title_shadow{
-    min-height: 60px;
-  }
+/* Classes da Home */
 
-  h4{
+    .home{
+        min-height: 960px;
+
+    }
+
+    .home span.level1{ /* Posicionamento do Medeiros da home */
+       margin-left: 0;
+    }
+
+    .home h2{
       font-size: 1.8em;
-  }
+    }
 
-  .parallax_wireframe, .parallax_uifinal{
-    display: none;
-  }
+    .home h4{
+      margin-left: 0;
+      font-size: 1em;
+    }
 
-  .imagem_mockup{
-    margin-top: 0px;
-  }
+    .case_listagem{
+      margin: 80px 0 120px 0;
+    }
 
-  .scroll-btn{
-    display: none;
-  }
+     .case_listagem .tumb{
+     text-align: center;
+    }
+
+    .case_listagem .tumb img{
+      max-width: 320px;
+    }
+
+    .box{
+      padding: 50px;
+    }
 }
 
 
@@ -489,7 +543,6 @@ a.logo{
 
     .case_listagem{
       text-align: center;
-      min-height: 200px;
       margin: 80px 0 120px 0;
     }
 
@@ -522,7 +575,7 @@ a.logo{
 
 @media screen and (max-width: 460px){
 
-  
+
     /* Títulos */
 
     h1{ /* Só foi usado na home */
@@ -571,7 +624,6 @@ a.logo{
 
     .case_listagem{
       text-align: center;
-      min-height: 200px;
       margin: 80px 0 120px 0;
     }
 
@@ -589,6 +641,16 @@ a.logo{
      margin-bottom: 80px;
      text-align: center;
     }
+
+    .case_listagem .tumb img{
+      max-width: 300px;
+    }
+
+    .box_cor_case{
+        width: 80%;
+        height: 180px;
+        z-index: -1;
+      }
 
     .barra_menu{
       display: none;
