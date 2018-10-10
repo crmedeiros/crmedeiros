@@ -1,13 +1,25 @@
 
-/* Mostra e oculta a barra */
+/* Mostra e oculta a barra na home */
+
+
 
 $(window).scroll(function(){
 var scrollTop = $(this).scrollTop();
-if(scrollTop > 1000){
-	$('.barra_menu').addClass('ativa');
+if(scrollTop < 75 ){
+  $('.barra_menu').addClass('inativa');
+
+}
+if(scrollTop > 75 && scrollTop < 950 ){
+  $('.barra_menu').addClass('black');
+  $('.barra_menu').removeClass('inativa');
+  
+} if(scrollTop >  950 ){
+  $('.barra_menu').removeClass('black');
+  $('.barra_menu').addClass('ativa');
+
 
 } else{
- 	$('.barra_menu').removeClass('ativa');
+  $('.barra_menu').removeClass('ativa');
 };
 });
 
