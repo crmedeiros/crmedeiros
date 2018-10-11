@@ -8,20 +8,28 @@ var scrollTop = $(this).scrollTop();
 if(scrollTop < 75 ){
   $('.barra_menu').addClass('inativa');
 
-}
-if(scrollTop > 75 && scrollTop < 950 ){
+}else if(scrollTop > 75 && scrollTop < 950 ){
   $('.barra_menu').addClass('black');
   $('.barra_menu').removeClass('inativa');
-  
-} if(scrollTop >  950 ){
-  $('.barra_menu').removeClass('black');
+
+}else if(scrollTop > 75 && $('.barra_menu').hasClass('barra_interna') ){
+  $('.barra_menu').removeClass('inativa');
+    $('.barra_menu').removeClass('black');
   $('.barra_menu').addClass('ativa');
 
+}else if(scrollTop >  950 && $('.barra_menu').hasClass('barra_interna') ){
+  $('.barra_menu').removeClass('black');
+  $('.barra_menu').removeClass('inativa');
+  $('.barra_menu').addClass('ativa');
+
+}else if($('.barra_menu').hasClass('barra_interna') ){
+  $('.barra_menu').removeClass('black');
 
 } else{
   $('.barra_menu').removeClass('ativa');
 };
 });
+
 
 
 /* Mostra e oculta botão scroll */

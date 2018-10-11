@@ -335,8 +335,6 @@ a.logo{
     background-size: 100px;
 }
 
-
-
 /* barra ativa após rolagem */
 
 .ativa{
@@ -356,6 +354,42 @@ a.logo{
   height: 90px;
   box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.05);
 }
+
+
+/* Barra páginas Internas */
+
+.barra_menu.barra_interna a.logo{
+    background: url(../images/logo_dark.svg) no-repeat; display: block;
+    width: 80px;
+    height: 80px;
+    background-size: 80px;
+}
+
+.barra_menu.barra_interna.inativa a.logo{
+    background: url(../images/logo_dark.svg) no-repeat; display: block;
+    width: 100px;
+    height: 100px;
+    background-size: 100px;
+}
+
+/* barra ativa após rolagem */
+
+.barra_interna.ativa{
+  background: #fff;
+  height: 90px;
+  box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.05);
+}
+
+
+.barra_interna.inativa{
+  background: transparent;
+  height: 90px;
+  box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.05);
+}
+
+
+
+
 
 .menu{
   text-align: right;
