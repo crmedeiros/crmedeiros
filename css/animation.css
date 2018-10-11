@@ -52,7 +52,7 @@
   left: 0;
   right: 0;
   text-align: center;
-  bottom: 0px;
+  bottom: 40px;
   transition: .5s;
 }
 .scroll-btn > * {
@@ -99,18 +99,11 @@
   width: 8px;
   height: 8px;
   margin: -4px 0 0 -4px;
-  background: #454C5C;
+  background: #737E99;
   border-radius: 50%;
   -webkit-animation: ani-mouse 1.5s linear infinite;
   -moz-animation: ani-mouse 1.5s linear infinite;
   animation: ani-mouse 1.5s linear infinite;
-}
-
-@media screen and (max-width: 767px){
-
-}
-
-@media screen and (max-width: 460px){
 }
 
 
@@ -130,47 +123,26 @@
 
 /* Logo  */
 
-@-webkit-keyframes ani-mouse {
-  0% {
-  opacity: 1;
-  top: 29%;
-  }
-  60% {
-  opacity: 1;
-  top: 71%;
-  }
-  100% {
-  opacity: 0;
-  top: 71%;
-  }
+a.logo{
+    animation-name: logo;
+    animation-duration: 1s;
+    animation-delay: 0.2s;
 }
-@-moz-keyframes ani-mouse {
-  0% {
-  opacity: 1;
-  top: 29%;
-  }
-  60% {
-  opacity: 1;
-  top: 71%;
+
+div.anime_txt_home{
+    animation-name: titulo_home;
+    animation-duration: 1s;
+    animation-delay: 0.2;
+}
+
+@keyframes logo {
+    0%   {top:-100px; opacity: 0}
+    50%  {top:10px; opacity: 1}
+    100% {top:0px; opacity: 1}
   }
 
-
-  100% {
-  opacity: 0;
-  top: 71%;
-  }
-}
-@keyframes ani-mouse {
- 0% {
-  opacity: 1;
-  top: 29%;
-  }
-  60% {
-  opacity: 1;
-  top: 71%;
-  }
-  100% {
-  opacity: 0;
-  top: 71%;
-  }
+@keyframes titulo_home {
+    0%   {top:-200px; opacity: 0}
+    50%  {top:10px; opacity: 1}
+    100% {top:0px; opacity: 1}
 }

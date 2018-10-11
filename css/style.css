@@ -97,6 +97,7 @@ h4{
 .home{
     min-height: 1000px;
     background: url(../images/bg_home.jpg) no-repeat fixed;
+    position: relative;
 }
 
 .home span{
@@ -127,6 +128,10 @@ h4{
     transition: .6s;
 }
 
+.box_txt_home{
+    position: absolute;
+}
+
 /* Listagem Cases Home */
 
 .case_listagem{
@@ -147,6 +152,11 @@ h4{
 }
 
 /* Cases */
+
+.box_topo_case{
+  color: #fff;
+  min-height: 600px;
+}
 
 .box_thanks{
    background: url(../images/cases/watchin/bg_thanks.jpg) no-repeat top;
@@ -210,7 +220,8 @@ h4{
 }
 
 .blocos_personas img{
-  width: 40%;
+  width: 80%;
+  max-width: 180px;
   margin: 0 30% 40px 30%;
 }
 
@@ -218,10 +229,7 @@ h4{
 /* Case WatchIn */
 
 .case_watchin{
-  background: url(../images/cases/watchin/bg_case_watchin.jpg) no-repeat top center;
-  background-size: cover;
-  color: #fff;
-  min-height: 600px;
+  background: url(../images/cases/watchin/bg_case_watchin.jpg) no-repeat center right;
 }
 
 .case_watchin img{
@@ -235,7 +243,7 @@ h4{
 }
 
 .parallax_uifinal{
-  background: url(../images/cases/watchin/capa.jpg) no-repeat fixed;
+  background: url(../images/cases/watchin/capa.jpg) no-repeat fixed center right;
   background-size: cover;
   min-height: 500px;
 }
@@ -248,7 +256,7 @@ h4{
 
 
 .imagem_mockup{
-  margin-top: -450px;
+  margin-top: -100px;
 }
 
 .box_idosos{
@@ -301,6 +309,7 @@ a.logo{
     width: 100px;
     height: 100px;
     background-size: 100px;
+    position: absolute;
 }
 
 /* Estado padrão do logo - Branca */
@@ -446,7 +455,17 @@ a.logo{
 
 @media screen and (max-width: 1200px){
 
+    .box_topo_case{
+      color: #fff;
+      min-height: 720px;
+      border: solid red 1px;
+    }
 
+     .mockup-topo{
+      margin-top: 0;
+      max-width: 90%;
+      background: red;
+    }
 
 }
 
@@ -506,11 +525,12 @@ a.logo{
       height: 300px;
      }
 
-
-
-
-
     /* Cases */
+
+    .box_topo_case{
+      min-height: 720px;
+      border: solid blue 1px;
+    }
 
     .box_thanks{
        background: url(../images/cases/watchin/bg_thanks.jpg) no-repeat top;
@@ -578,11 +598,7 @@ a.logo{
     /* Case WatchIn */
 
     .case_watchin{
-      background: url(../images/cases/watchin/bg_case_watchin.jpg) no-repeat top center;
-      background-size: cover;
-      color: #fff;
-      min-height: 600px;
-    }
+      }
 
     .case_watchin img{
       margin: 40px auto;
@@ -595,8 +611,6 @@ a.logo{
     }
 
     .parallax_uifinal{
-      background: url(../images/cases/watchin/capa.jpg) no-repeat fixed;
-      background-size: cover;
       min-height: 500px;
     }
 
@@ -688,7 +702,23 @@ a.logo{
       padding: 50px;
     }
 
+     .box_topo_case{
+      color: #fff;
+      min-height: 720px;
+}
 
+      .mockup_topo{
+        display: none;
+      }
+
+    /* Case WatchIn */
+
+    .case_watchin{
+    }
+
+    .case_watchin img{
+      margin: 40px auto;
+    }
 
 }
 
