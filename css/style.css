@@ -33,14 +33,14 @@ img{
 }
 
 h1, h2, h3, h4, h5{
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     text-transform: uppercase;
     font-weight: bold;
 }
 
 p, li{
     letter-spacing: 1.2px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     color: #8693B3;
     font-weight: 100;
     list-style: none;
@@ -136,7 +136,7 @@ h4{
 
 .case_listagem{
   position: relative;
-  margin: 80px 0 120px 0;
+  margin: 160px 0;
 }
 
 .case_listagem h4{
@@ -155,7 +155,7 @@ h4{
 
 .box_topo_case{
   color: #fff;
-  min-height: 600px;
+  min-height: 980px;
 }
 
 .box_thanks{
@@ -172,7 +172,7 @@ h4{
 }
 
 .box{ /* Blocos com margens */
-  padding: 120px 80px 120px 80px;
+  padding: 80px 0;
 }
 
 .box img{
@@ -226,6 +226,7 @@ h4{
 }
 
 
+
 /* Case WatchIn */
 
 .case_watchin{
@@ -236,31 +237,34 @@ h4{
   margin: 40px auto;
 }
 
+.parallax{
+  min-height: 500px;
+  margin-bottom: 80px;
+}
+
 .parallax_wireframe{
   background: url(../images/cases/watchin/wireframe_01_paralax.jpg) no-repeat fixed;
   background-size: cover;
-  min-height: 500px;
 }
 
 .parallax_uifinal{
   background: url(../images/cases/watchin/capa.jpg) no-repeat fixed center right;
   background-size: cover;
-  min-height: 500px;
 }
 
 .parallax_problema{
   background: url(../images/cases/problema_paralax.jpg) no-repeat fixed;
   background-size: cover;
-  min-height: 500px;
 }
 
 
 .imagem_mockup{
-  margin-top: -100px;
+  width: 80%;
+  
 }
 
 .box_idosos{
-  background: url(../images/cases/watchin/foto_Idosos.jpg) no-repeat;
+  background: url(../images/cases/watchin/foto_Idosos.jpg) no-repeat center center;
   height: 900px;
   width: 100%;
   background-size: cover;
@@ -352,7 +356,7 @@ a.logo{
 .inativa{
   background: transparent;
   height: 90px;
-  box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.05);
+  box-shadow: none !important;
 }
 
 
@@ -428,7 +432,7 @@ a.logo{
 /* Small devices (tablets, 768px and up) */
 /* Media Queries Tablet / Mobile*/
 
-@media screen and (max-width: 1440px){
+@media screen and (max-width: 1366px){
 
  /* Títulos */
 
@@ -485,23 +489,14 @@ a.logo{
      text-align: center;
     }
 
-}
-
-@media screen and (max-width: 1200px){
-
     .box_topo_case{
       color: #fff;
-      min-height: 720px;
-      border: solid red 1px;
-    }
-
-     .mockup-topo{
-      margin-top: 0;
-      max-width: 90%;
-      background: red;
+      min-height: 640px;
     }
 
 }
+
+
 
 @media screen and (max-width: 960px){
 
@@ -561,9 +556,14 @@ a.logo{
 
     /* Cases */
 
-    .box_topo_case{
-      min-height: 720px;
-      border: solid blue 1px;
+
+        .case_info{
+      padding-top:200px !important;
+
+    }
+
+    .case_image{
+      min-height: 600px;
     }
 
     .box_thanks{
@@ -604,7 +604,7 @@ a.logo{
     /* Blocos Aproach */
 
     .blocos_etapas{
-      padding: 40px 20px 40px 20px;
+      
       margin-right: 10px;
     }
 
@@ -737,8 +737,7 @@ a.logo{
     }
 
      .box_topo_case{
-      color: #fff;
-      min-height: 720px;
+      min-height: 980px;
 }
 
       .mockup_topo{
@@ -788,7 +787,7 @@ a.logo{
 /* Classes da Home */
 
     .home{
-        min-height: 540px;
+        min-height: 640px;
 
     }
 

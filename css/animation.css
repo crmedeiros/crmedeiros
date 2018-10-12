@@ -107,20 +107,6 @@
 }
 
 
-
-/* Animações Home */
-
-.anime{
-  opacity: 0;
-  transform: translate3d(-100px,0,0);
-  transition: .3s;
-}
-
-.anime-start{
-  opacity: 1;
-  transform: translate3d(0,0,0);
-}
-
 /* Logo  */
 
 a.logo{
@@ -135,13 +121,67 @@ div.anime_txt_home{
     animation-delay: 0.2;
 }
 
-@keyframes logo {
+ul.menu_principal{
+    animation-name: menu_topo;
+    animation-duration: 1s;
+    animation-delay: 0.4;
+    position: absolute;
+    right: 50px;
+
+}
+
+@-moz-keyframes logo {
     0%   {top:-100px; opacity: 0}
     50%  {top:10px; opacity: 1}
     100% {top:0px; opacity: 1}
   }
 
+@-webkit-keyframes logo {
+    0%   {top:-100px; opacity: 0}
+    50%  {top:10px; opacity: 1}
+    100% {top:0px; opacity: 1}
+  }
+
+  @keyframes logo {
+    0%   {top:-100px; opacity: 0}
+    50%  {top:10px; opacity: 1}
+    100% {top:0px; opacity: 1}
+  }
+
+
+
+@-moz-keyframes titulo_home {
+    0%   {top:-200px; opacity: 0}
+    50%  {top:10px; opacity: 1}
+    100% {top:0px; opacity: 1}
+}
+
+@-webkit-keyframes titulo_home {
+    0%   {top:-200px; opacity: 0}
+    50%  {top:10px; opacity: 1}
+    100% {top:0px; opacity: 1}
+}
+
 @keyframes titulo_home {
+    0%   {top:-200px; opacity: 0}
+    50%  {top:10px; opacity: 1}
+    100% {top:0px; opacity: 1}
+}
+
+
+@-moz-keyframes menu_topo {
+    0%   {top:-200px; opacity: 0}
+    50%  {top:10px; opacity: 1}
+    100% {top:0px; opacity: 1}
+}
+
+@-webkit-keyframes menu_topo {
+    0%   {top:-200px; opacity: 0}
+    50%  {top:10px; opacity: 1}
+    100% {top:0px; opacity: 1}
+}
+
+@keyframes menu_topo {
     0%   {top:-200px; opacity: 0}
     50%  {top:10px; opacity: 1}
     100% {top:0px; opacity: 1}
