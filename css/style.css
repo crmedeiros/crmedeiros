@@ -151,6 +151,13 @@ h4{
   z-index: -1;
 }
 
+/* Páginas Internas */
+
+.about{
+  padding-top: 15%;
+}
+
+
 /* Cases */
 
 .box_topo_case{
@@ -278,15 +285,6 @@ h4{
   color: #fff;
 }
 
-.about{
-  padding-top: 15%;
-}
-
-.about h2{
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #454C5C;
-}
 
 
 
@@ -528,6 +526,12 @@ a.logo{
       margin-left: 0;
       font-size: 1em;
     }
+/* Páginas Internas */
+    .about{
+  padding-top: 40%;
+}
+
+
 
     .case_listagem{
       margin: 80px 0 120px 0;
@@ -728,10 +732,6 @@ a.logo{
      text-align: center;
     }
 
-    .barra_menu{
-      display: none;
-    }
-
     .box{
       padding: 50px;
     }
@@ -834,9 +834,6 @@ a.logo{
         z-index: -1;
       }
 
-    .barra_menu{
-      display: none;
-    }
 
     .box{
       padding: 50px;
